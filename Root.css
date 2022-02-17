@@ -1,0 +1,97 @@
+:root {
+    --btnkeyframes: {
+      0%{
+          transform: scale(1);
+      }
+      60%{
+          transform: scale(1.1);
+      }
+      100%{
+          transform: scale(1);
+      }
+  };
+    --btnborder1: 1px solid #966909;
+    --btncolor: #966909;
+    --btnbackground-color: #A0DB41;
+    --btnbox-shadow: 2px 2px 2px #966909;
+    --color1: #888888;
+    --color2: #ccc;
+    --background-color2: #CF8F2E;
+    --background-color1: #C7C6C6;
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+    --animation: enable 0.3s linear;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Lato", sans-serif;
+  }
+
+  .navbar{
+    position: sticky;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: rgb(231, 226, 221);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+.button{
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  color:  var(--main-black);
+  background: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  font-size: 1rem;
+  letter-spacing: var(--mainSpacing);
+  cursor: pointer;
+}
+.button2{
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+  color: #966909;
+  background-color: #DAD735;
+  border: 1px solid #966909;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  box-shadow: 1px 2px 2px #966909;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+.footer {
+  margin-top: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+.footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}

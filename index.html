@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy House</title>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3278fcf034.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-center">
+            <!-- <span class="nav-icon">
+                <i class="fas fa-bars"></i> 
+            </span> -->
+            <img src="./images/logo.svg"/>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="banner">
+            <h2 class="banner-title">furniture collection</h2>
+            <button class="banner-btn">shop now</button>
+        </div>
+    </header>
+    <section class="products">
+        <div class="section-title">
+            <h2>products</h2>
+        </div>
+        <div class="products-center">
+        <!-- <aside class="product">
+                <div class="img-container">
+                    <img src="${el.img}" class="product-img"/>
+                    <button class="bag-btn" data-id=${el.id}>
+                        <i class="fas fa-shopping-cart"></i>
+                        add to bag
+                    </button>
+                </div>
+                <h3>${el.title}</h3>
+                <h4>$${el.price}</h4>
+            </aside> -->
+        </div>
+
+    </section> 
+
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+
+                <!-- <div class="cart-item">
+                    <img src="./images/product-1.jpeg"/>
+                    <div>
+                        <h4>queen bed</h4>
+                        <h5>$9</h5>
+                        <span class="remove-item"> remove</span>
+                    </div>
+                    <div >
+                        <i class="fas fa-chevron-up"></i>
+                        <p class="item-amount">0</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div> -->
+
+            </div>
+            
+            <div class="cart-footer ">
+                <h3>your total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!-- app js -->
+    <script src="./app.js"></script>
+</body>
+</html>
